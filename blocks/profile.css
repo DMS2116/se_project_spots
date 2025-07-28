@@ -1,0 +1,103 @@
+.profile {
+    display: flex;
+    padding: 34px 0 20px;
+    border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
+}
+.profile__avatar {
+    height: 190px;
+    width: 190px;
+    border-radius: 8px;
+    margin: 0 20px 0 0;
+}
+.profile__column {
+    display: flex;
+    flex-direction: column;
+}
+.profile__name {
+    margin: 0 0 12px;
+    font-weight: 500;
+    font-size: 32px;
+    color: #212121;
+    line-height: 1;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.profile__description {
+    margin: 0;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    color: #212121;
+}
+.profile__edit-btn {
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    opacity: 0.7;
+    border-radius: 8px;
+    margin-top: auto;
+    margin-right: auto;
+    background-color: #fcf5e5;
+    border: none;
+}
+.profile__edit-btn:hover {
+    cursor: pointer;
+    color: #212121;
+}
+.profile__add-btn {
+    width: 157px;
+    height: 52px;
+    gap: 8px;
+    margin-top: auto;
+    /* padding: 18px 32px 18px 32px; */
+    background-color: #212121;
+    color: #fcf5e5;
+    border-radius: 8px;
+    margin-left: auto; /* Push only the button to the far right */
+    /* Remove align-self, let parent handle alignment */
+}
+.profile__add-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+@media screen and (max-width: 627px) {
+    .profile {
+        flex-direction: column;
+        max-width: 288px;
+        align-items: center;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .profile__avatar {
+        margin: 0 0 12px;
+        height: 80px;
+        width: 80px;
+    }
+    .profile__ name {
+        font-size: 16px;
+        margin: 0 0 6px;
+    }
+
+    .profile__description {
+        margin-top: 0 0 32px;
+    }
+    .profile__column {
+        margin: 0 0 20px;
+    }
+    .profile__add-btn {
+        margin: 0;
+        width: 100%;
+        align-self: center; /* Center the button on mobile */
+        margin-left: 0; /* Reset auto margin for mobile */
+    }
+}
