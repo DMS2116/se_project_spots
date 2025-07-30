@@ -22,7 +22,6 @@
     display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
-    line-clamp: 3;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
@@ -31,7 +30,6 @@
     display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
-    line-clamp: 3;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     color: #212121;
@@ -39,10 +37,9 @@
 .profile__edit-btn {
     font-family: Poppins;
     font-weight: 500;
-    font-style: Medium;
     font-size: 16px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     opacity: 0.7;
     border-radius: 8px;
     margin-top: auto;
@@ -52,17 +49,20 @@
 }
 .profile__edit-btn:hover {
     cursor: pointer;
+    opacity: 100%;
     color: #212121;
 }
 .profile__add-btn {
     width: 157px;
     height: 52px;
-    gap: 8px;
+    margin-right: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
     margin-top: auto;
     /* padding: 18px 32px 18px 32px; */
     background-color: #212121;
     color: #fcf5e5;
-    border-radius: 8px;
     margin-left: auto; /* Push only the button to the far right */
     /* Remove align-self, let parent handle alignment */
 }
@@ -83,21 +83,35 @@
         height: 80px;
         width: 80px;
     }
-    .profile__ name {
+    .profile__name {
         font-size: 16px;
         margin: 0 0 6px;
     }
-
     .profile__description {
-        margin-top: 0 0 32px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+    opacity: 1;
+    margin-top: 0 0 32px;
     }
     .profile__column {
         margin: 0 0 20px;
     }
+   .profile__edit-btn{
+    width: 107.34px;
+    height: 16px;
+    white-space: nowrap; /* to keep text in line*/
+    margin-top: 12px;
+    margin-bottom: 20px;
+    gap: 8px;
+    opacity: 0.7;
+    border-radius: 90px;
+   }
     .profile__add-btn {
         margin: 0;
         width: 100%;
         align-self: center; /* Center the button on mobile */
         margin-left: 0; /* Reset auto margin for mobile */
     }
+
 }
